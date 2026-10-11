@@ -1,0 +1,1484 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harishwa S | Computer Science Student & Aspiring Software Developer</title>
+  <meta name="description" content="Portfolio of Harishwa S — First-Year Computer Science and Engineering student at KPRIET Coimbatore. Python developer, embedded IoT prototypyper, and technology enthusiast.">
+  <meta name="keywords" content="Harishwa S, Computer Science, KPRIET, Python, Portfolio, Embedded Systems, Arduino, Smart India Hackathon, Salem Tamil Nadu">
+  <meta name="author" content="Harishwa S">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Harishwa S | Computer Science Student & Developer Portfolio">
+  <meta property="og:description" content="Explore projects, skills, education, and technical experience of Harishwa S.">
+  <meta property="og:image" content="assets/images/harishwa-profile.jpg">
+
+  <!-- Local Stylesheets -->
+  <link rel="stylesheet" href="css/tailwind.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="antialiased selection:bg-cyan-500 selection:text-slate-950">
+
+  <!-- Ambient Glow Effects -->
+  <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+    <div class="glow-orb w-[500px] h-[500px] bg-cyan-600/20 top-[-100px] left-[-150px]"></div>
+    <div class="glow-orb w-[600px] h-[600px] bg-purple-600/15 top-[30%] right-[-200px]"></div>
+    <div class="glow-orb w-[500px] h-[500px] bg-blue-600/15 bottom-[-100px] left-[20%]"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Logo / Brand -->
+        <a href="#hero" class="group flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+            H
+          </div>
+          <div>
+            <span class="text-lg font-bold tracking-tight text-white dark:text-white light:text-slate-900 group-hover:text-cyan-400 transition-colors">Harishwa S</span>
+            <span class="block text-[11px] font-mono text-cyan-400 tracking-wider">CSE • KPRIET</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center space-x-1 lg:space-x-2">
+          <a href="#about" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-cyan-400 hover:bg-white/5 transition-all">About</a>
+          <a href="#skills" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-cyan-400 hover:bg-white/5 transition-all">Skills</a>
+          <a href="#projects" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-cyan-400 hover:bg-white/5 transition-all">Projects</a>
+          <a href="#education" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-cyan-400 hover:bg-white/5 transition-all">Education</a>
+          <a href="#activities" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-cyan-400 hover:bg-white/5 transition-all">Activities</a>
+          <a href="#contact" class="nav-link px-3 py-2 rounded-lg text-sm font-medium text-slate-300 hover:text-cyan-400 hover:bg-white/5 transition-all">Contact</a>
+        </nav>
+
+        <!-- Right Side Controls -->
+        <div class="flex items-center space-x-3">
+          <!-- Theme Toggle -->
+          <button id="theme-toggle" aria-label="Toggle Light/Dark Theme" class="p-2.5 rounded-xl border border-white/10 hover:border-cyan-500/40 text-slate-300 hover:text-cyan-400 bg-white/5 hover:bg-white/10 transition-all cursor-pointer">
+            <svg class="sun-icon hidden w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+            </svg>
+            <svg class="moon-icon w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+            </svg>
+          </button>
+
+          <!-- Resume Download CTA -->
+          <a href="assets/docs/Harishwa_S_Resume.pdf" download="Harishwa_S_Resume.pdf" class="hidden sm:inline-flex items-center space-x-2 px-4 py-2 rounded-xl text-sm font-semibold bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+            </svg>
+            <span>Resume</span>
+          </a>
+
+          <!-- Mobile Hamburger -->
+          <button id="mobile-menu-btn" aria-label="Toggle Mobile Menu" aria-expanded="false" class="md:hidden p-2.5 rounded-xl border border-white/10 text-slate-300 hover:text-cyan-400 hover:bg-white/5 transition-all">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden md:hidden glass-panel border-t border-white/10 px-4 pt-2 pb-6 space-y-2">
+      <a href="#about" class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-white/5">About</a>
+      <a href="#skills" class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-white/5">Skills</a>
+      <a href="#projects" class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-white/5">Projects</a>
+      <a href="#education" class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-white/5">Education</a>
+      <a href="#activities" class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-white/5">Activities</a>
+      <a href="#contact" class="block px-3 py-2.5 rounded-lg text-base font-medium text-slate-300 hover:text-cyan-400 hover:bg-white/5">Contact</a>
+      <div class="pt-4 flex flex-col space-y-3">
+        <a href="assets/docs/Harishwa_S_Resume.pdf" download="Harishwa_S_Resume.pdf" class="flex items-center justify-center space-x-2 w-full py-2.5 rounded-xl text-sm font-semibold bg-cyan-500 text-slate-950 shadow-md">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+          </svg>
+          <span>Download Resume PDF</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative z-10 pt-24">
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero" class="relative min-h-[92vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12 overflow-hidden">
+      <!-- Interactive Canvas Background -->
+      <canvas id="hero-particles" class="absolute inset-0 w-full h-full pointer-events-auto z-0 opacity-80"></canvas>
+
+      <div class="relative z-10 max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Left Content Column -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          
+          <!-- Status Pill -->
+          <div class="inline-flex items-center space-x-2.5 px-3.5 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 backdrop-blur-md">
+            <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-ping"></span>
+            <span class="text-xs font-mono font-medium text-cyan-300">Open for Collaborations & Tech Opportunities</span>
+          </div>
+
+          <!-- Hero Name -->
+          <div class="space-y-2">
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white">
+              Hi, I'm <span class="gradient-text-cyan-blue">Harishwa S</span>
+            </h1>
+            <!-- Dynamic Typing Subtitle -->
+            <div class="h-9 sm:h-11 flex items-center justify-center lg:justify-start">
+              <span class="text-lg sm:text-2xl font-mono text-cyan-400 font-semibold" id="typing-role"></span>
+              <span class="w-0.5 h-6 bg-cyan-400 ml-1 animate-pulse"></span>
+            </div>
+          </div>
+
+          <!-- Verified Summary from Resume -->
+          <p class="text-base sm:text-lg text-slate-300 max-w-2xl leading-relaxed mx-auto lg:mx-0">
+            First-year Computer Science and Engineering student at <strong class="text-white font-semibold">KPR Institute of Engineering and Technology, Coimbatore</strong> with a strong academic record and a working knowledge of Python programming and AI tools. Hands-on experience building an Arduino-based safety project and representing a farmer-to-consumer platform concept at Smart India Hackathon.
+          </p>
+
+          <!-- Quick Verified Badges -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2 pt-1">
+            <span class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-lg text-xs font-mono bg-white/5 border border-white/10 text-slate-300">
+              <span class="text-cyan-400 font-bold">XII:</span> 92.17% State Board
+            </span>
+            <span class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-lg text-xs font-mono bg-white/5 border border-white/10 text-slate-300">
+              <span class="text-cyan-400 font-bold">X:</span> 96.6% Distinction
+            </span>
+            <span class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-lg text-xs font-mono bg-white/5 border border-white/10 text-slate-300">
+              <span class="text-cyan-400 font-bold">Cert:</span> 40h Python
+            </span>
+            <span class="inline-flex items-center space-x-1.5 px-3 py-1 rounded-lg text-xs font-mono bg-white/5 border border-white/10 text-slate-300">
+              <span class="text-cyan-400 font-bold">Club:</span> Ignitron KPRIET
+            </span>
+          </div>
+
+          <!-- CTA Actions -->
+          <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+            <a href="#projects" class="inline-flex items-center space-x-2.5 px-6 py-3.5 rounded-xl text-base font-semibold bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 text-white shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all">
+              <span>Explore My Work</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+              </svg>
+            </a>
+
+            <a href="assets/docs/Harishwa_S_Resume.pdf" download="Harishwa_S_Resume.pdf" class="inline-flex items-center space-x-2.5 px-6 py-3.5 rounded-xl text-base font-semibold border border-cyan-500/40 bg-cyan-500/10 text-cyan-300 hover:bg-cyan-500/20 hover:border-cyan-400 transition-all">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+              </svg>
+              <span>Download Resume</span>
+            </a>
+
+            <button id="open-resume-modal" class="inline-flex items-center space-x-1.5 px-4 py-3.5 rounded-xl text-sm font-medium border border-white/10 bg-white/5 text-slate-300 hover:bg-white/10 hover:text-white transition-all cursor-pointer" title="Preview Resume in Modal">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+              </svg>
+              <span>Quick Preview</span>
+            </button>
+          </div>
+
+          <!-- Verified Social Channels -->
+          <div class="flex items-center justify-center lg:justify-start space-x-4 pt-4 border-t border-white/10 text-slate-400 text-sm">
+            <span class="font-medium text-slate-400">Verified Channels:</span>
+            
+            <a href="https://linkedin.com/in/harishwa-s-048762432" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg bg-white/5 border border-white/10 text-slate-300 hover:text-cyan-400 hover:border-cyan-500/40 hover:bg-cyan-500/10 transition-all flex items-center space-x-2" title="LinkedIn Profile">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span class="text-xs font-mono">LinkedIn</span>
+            </a>
+
+            <a href="mailto:harishwa.tech2008@gmail.com" class="p-2 rounded-lg bg-white/5 border border-white/10 text-slate-300 hover:text-cyan-400 hover:border-cyan-500/40 hover:bg-cyan-500/10 transition-all flex items-center space-x-2" title="Send Email">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              <span class="text-xs font-mono">Email</span>
+            </a>
+
+            <span class="text-xs font-mono text-slate-400 flex items-center space-x-1">
+              <svg class="w-3.5 h-3.5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span>Salem, TN</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Right Profile Image Card -->
+        <div class="lg:col-span-5 flex justify-center">
+          <div class="relative group">
+            
+            <!-- Animated Glow Behind Photo -->
+            <div class="absolute -inset-2 rounded-3xl bg-gradient-to-r from-cyan-500 via-indigo-500 to-purple-600 opacity-70 blur-xl group-hover:opacity-100 transition duration-700 group-hover:scale-105"></div>
+            
+            <!-- Card Wrapper -->
+            <div class="relative glass-panel rounded-3xl p-4 sm:p-5 border border-white/20 shadow-2xl overflow-hidden max-w-[340px] sm:max-w-[380px]">
+              
+              <!-- Profile Photo -->
+              <div class="relative aspect-[4/5] rounded-2xl overflow-hidden bg-slate-900 border border-white/10">
+                <img src="assets/images/harishwa-profile.jpg" alt="Harishwa S - Profile Portrait" class="w-full h-full object-cover object-top transition duration-500 group-hover:scale-105" loading="eager">
+                
+                <!-- Bottom Gradient Overlay -->
+                <div class="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-slate-950 via-slate-950/70 to-transparent"></div>
+                
+                <!-- Quick Badge on Image -->
+                <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs">
+                  <span class="px-2.5 py-1 rounded-md bg-black/70 backdrop-blur-md text-cyan-300 font-mono border border-cyan-500/30">
+                    B.E. CSE (2026-30)
+                  </span>
+                  <span class="px-2.5 py-1 rounded-md bg-emerald-500/20 backdrop-blur-md text-emerald-300 font-mono border border-emerald-500/40 flex items-center space-x-1">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+                    <span>Salem, TN</span>
+                  </span>
+                </div>
+              </div>
+
+              <!-- Card Bio Strip -->
+              <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between">
+                <div>
+                  <h3 class="text-sm font-bold text-white">Harishwa S</h3>
+                  <p class="text-xs text-slate-400">KPR Institute of Eng. & Tech.</p>
+                </div>
+                <div class="text-right">
+                  <span class="text-xs font-mono text-cyan-400">Coimbatore</span>
+                  <p class="text-[11px] text-slate-500 font-mono">First Year</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ME SECTION ==================== -->
+    <section id="about" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="space-y-4 text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full text-xs font-mono uppercase tracking-wider text-cyan-400 bg-cyan-500/10 border border-cyan-500/20">
+          <span>About My Journey</span>
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
+          Dedicated to Engineering & <span class="gradient-text-cyan-blue">Practical Innovation</span>
+        </h2>
+        <p class="text-slate-400 text-base sm:text-lg">
+          An authentic snapshot of my academic track record, technical curiosity, and collaborative mindset.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Left Story Card -->
+        <div class="lg:col-span-7 glass-panel rounded-3xl p-8 sm:p-10 flex flex-col justify-between space-y-6">
+          <div class="space-y-5">
+            <h3 class="text-2xl font-bold text-white flex items-center space-x-3">
+              <span class="p-2 rounded-xl bg-cyan-500/10 text-cyan-400 border border-cyan-500/20">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                </svg>
+              </span>
+              <span>Engineering Mindset & Ambition</span>
+            </h3>
+
+            <p class="text-slate-300 leading-relaxed text-base">
+              I am a first-year Computer Science and Engineering student at <strong class="text-white">KPR Institute of Engineering and Technology (KPRIET)</strong>, Coimbatore. Driven by a rigorous academic foundation—securing <span class="text-cyan-400 font-semibold">92.17% in Class XII State Board</span> and <span class="text-cyan-400 font-semibold">96.6% in Class X Matriculation</span>—I cultivate both theoretical clarity and real-world implementation skills.
+            </p>
+
+            <p class="text-slate-300 leading-relaxed text-base">
+              My engineering interests span <strong class="text-white">software development, web technologies, embedded IoT prototyping</strong>, and <strong class="text-white">AI tools</strong>. I take pride in active hands-on creation: from writing Python algorithms to assembling hardware circuits and sensor systems on Arduino boards for driver safety.
+            </p>
+
+            <p class="text-slate-300 leading-relaxed text-base">
+              Beyond individual coding, I bring proven leadership and collaboration. Whether spearheading team ideation for the <strong class="text-cyan-300">Smart India Hackathon (SIH)</strong> with FarmConnect or collaborating inside the collegiate <strong class="text-cyan-300">Ignitron Club</strong> at KPRIET, I thrive when tackling real societal challenges.
+            </p>
+          </div>
+
+          <!-- Areas of Interest Pills -->
+          <div class="pt-6 border-t border-white/10">
+            <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400 mb-3">Key Areas of Focus & Exploration</h4>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1 rounded-lg text-xs font-mono bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">Artificial Intelligence</span>
+              <span class="px-3 py-1 rounded-lg text-xs font-mono bg-blue-500/10 text-blue-300 border border-blue-500/20">Python Programming</span>
+              <span class="px-3 py-1 rounded-lg text-xs font-mono bg-indigo-500/10 text-indigo-300 border border-indigo-500/20">Web Development</span>
+              <span class="px-3 py-1 rounded-lg text-xs font-mono bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">Embedded Prototyping</span>
+              <span class="px-3 py-1 rounded-lg text-xs font-mono bg-purple-500/10 text-purple-300 border border-purple-500/20">Emerging Technologies</span>
+              <span class="px-3 py-1 rounded-lg text-xs font-mono bg-amber-500/10 text-amber-300 border border-amber-500/20">Problem Solving</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Quick Stats Grid -->
+        <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+          
+          <div class="glass-card-interactive rounded-2xl p-6 flex flex-col justify-between">
+            <div class="w-10 h-10 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-4">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="text-3xl font-extrabold text-white">96.6%</div>
+              <div class="text-xs font-semibold text-cyan-400 font-mono mt-1">Class X Top Honor</div>
+              <p class="text-xs text-slate-400 mt-2">Sri Nachiyar Matriculation (483/500)</p>
+            </div>
+          </div>
+
+          <div class="glass-card-interactive rounded-2xl p-6 flex flex-col justify-between">
+            <div class="w-10 h-10 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 mb-4">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="text-3xl font-extrabold text-white">92.17%</div>
+              <div class="text-xs font-semibold text-blue-400 font-mono mt-1">Class XII State Board</div>
+              <p class="text-xs text-slate-400 mt-2">Sree Saravana Nikethan (553/600)</p>
+            </div>
+          </div>
+
+          <div class="glass-card-interactive rounded-2xl p-6 flex flex-col justify-between">
+            <div class="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 mb-4">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="text-3xl font-extrabold text-white">40 Hrs</div>
+              <div class="text-xs font-semibold text-purple-400 font-mono mt-1">Python Certified</div>
+              <p class="text-xs text-slate-400 mt-2">CUBE Technologies accreditation</p>
+            </div>
+          </div>
+
+          <div class="glass-card-interactive rounded-2xl p-6 flex flex-col justify-between">
+            <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mb-4">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+              </svg>
+            </div>
+            <div>
+              <div class="text-3xl font-extrabold text-white">SIH</div>
+              <div class="text-xs font-semibold text-emerald-400 font-mono mt-1">Hackathon Concept</div>
+              <p class="text-xs text-slate-400 mt-2">FarmConnect platform ideation</p>
+            </div>
+          </div>
+
+          <!-- Bottom Full Card -->
+          <div class="col-span-2 glass-panel rounded-2xl p-6 flex items-center space-x-4 border border-cyan-500/20 bg-cyan-500/5">
+            <div class="w-12 h-12 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white shrink-0">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-white">Leadership & Communication</h4>
+              <p class="text-xs text-slate-300 leading-normal mt-0.5">
+                Experienced in guiding small teams, coordinating project tasks, and communicating ideas clearly in English & native Tamil.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== TECHNICAL SKILLS SECTION ==================== -->
+    <section id="skills" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="space-y-4 text-center max-w-3xl mx-auto mb-14">
+        <div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full text-xs font-mono uppercase tracking-wider text-cyan-400 bg-cyan-500/10 border border-cyan-500/20">
+          <span>Technical Arsenal</span>
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
+          Skills & <span class="gradient-text-cyan-blue">Practical Competencies</span>
+        </h2>
+        <p class="text-slate-400 text-base sm:text-lg">
+          Accurately extracted from hands-on academic training, embedded project execution, and certified coursework.
+        </p>
+
+        <!-- Category Filter Tabs -->
+        <div class="flex flex-wrap items-center justify-center gap-2 pt-4">
+          <button class="skill-filter-btn px-4 py-2 rounded-xl text-xs font-medium bg-cyan-500/20 text-cyan-400 border border-cyan-500/40 transition-all cursor-pointer" data-category="all">
+            All Skills
+          </button>
+          <button class="skill-filter-btn px-4 py-2 rounded-xl text-xs font-medium text-slate-400 border border-transparent hover:text-white hover:bg-white/5 transition-all cursor-pointer" data-category="programming">
+            Programming & Core
+          </button>
+          <button class="skill-filter-btn px-4 py-2 rounded-xl text-xs font-medium text-slate-400 border border-transparent hover:text-white hover:bg-white/5 transition-all cursor-pointer" data-category="ai">
+            AI & Web
+          </button>
+          <button class="skill-filter-btn px-4 py-2 rounded-xl text-xs font-medium text-slate-400 border border-transparent hover:text-white hover:bg-white/5 transition-all cursor-pointer" data-category="hardware">
+            Hardware & IoT
+          </button>
+          <button class="skill-filter-btn px-4 py-2 rounded-xl text-xs font-medium text-slate-400 border border-transparent hover:text-white hover:bg-white/5 transition-all cursor-pointer" data-category="soft">
+            Strengths & Languages
+          </button>
+        </div>
+      </div>
+
+      <!-- Skills Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="skills-grid">
+        
+        <!-- Skill Card 1: Python -->
+        <div class="skill-card-item glass-card-interactive rounded-2xl p-6" data-category="programming">
+          <div class="flex items-start justify-between">
+            <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+              </svg>
+            </div>
+            <span class="px-2.5 py-1 rounded-md text-[11px] font-mono bg-blue-500/20 text-blue-300 border border-blue-500/30">
+              Good Working Knowledge
+            </span>
+          </div>
+          <div class="mt-4">
+            <h3 class="text-lg font-bold text-white">Python Programming</h3>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+              Syntactical mastery, algorithmic problem solving, procedural & modular programming, and 40-hour formal training credential.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-slate-400">
+            <span>Certification: CUBE Tech</span>
+            <span class="text-blue-400 font-semibold">Jan 2026</span>
+          </div>
+        </div>
+
+        <!-- Skill Card 2: AI Tools -->
+        <div class="skill-card-item glass-card-interactive rounded-2xl p-6" data-category="ai">
+          <div class="flex items-start justify-between">
+            <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+            </div>
+            <span class="px-2.5 py-1 rounded-md text-[11px] font-mono bg-purple-500/20 text-purple-300 border border-purple-500/30">
+              Working Knowledge
+            </span>
+          </div>
+          <div class="mt-4">
+            <h3 class="text-lg font-bold text-white">AI Tools & AI-Assisted Dev</h3>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+              Applying state-of-the-art AI developer assistants for accelerated code comprehension, rapid prototyping, and productivity augmentation.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-slate-400">
+            <span>Focus Area</span>
+            <span class="text-purple-400 font-semibold">AI Tooling</span>
+          </div>
+        </div>
+
+        <!-- Skill Card 3: Web Development -->
+        <div class="skill-card-item glass-card-interactive rounded-2xl p-6" data-category="ai">
+          <div class="flex items-start justify-between">
+            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+              </svg>
+            </div>
+            <span class="px-2.5 py-1 rounded-md text-[11px] font-mono bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">
+              Basics
+            </span>
+          </div>
+          <div class="mt-4">
+            <h3 class="text-lg font-bold text-white">Web Development</h3>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+              Understanding foundational web architecture, HTML5 structure, CSS styling, responsive layout principles, and interactive DOM logic.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-slate-400">
+            <span>Modern Web Stack</span>
+            <span class="text-cyan-400 font-semibold">Frontend Basics</span>
+          </div>
+        </div>
+
+        <!-- Skill Card 4: Arduino & Electronics -->
+        <div class="skill-card-item glass-card-interactive rounded-2xl p-6" data-category="hardware">
+          <div class="flex items-start justify-between">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+              </svg>
+            </div>
+            <span class="px-2.5 py-1 rounded-md text-[11px] font-mono bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+              Basics & Hands-on
+            </span>
+          </div>
+          <div class="mt-4">
+            <h3 class="text-lg font-bold text-white">Arduino & Electronics</h3>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+              Microcontroller programming, sensor interfacing (infrared eye-blink sensors), piezo buzzers, power supply, and breadboard circuitry.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-slate-400">
+            <span>Hardware Experience</span>
+            <span class="text-emerald-400 font-semibold">Embedded Systems</span>
+          </div>
+        </div>
+
+        <!-- Skill Card 5: Prototyping & Problem Solving -->
+        <div class="skill-card-item glass-card-interactive rounded-2xl p-6" data-category="programming">
+          <div class="flex items-start justify-between">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+              </svg>
+            </div>
+            <span class="px-2.5 py-1 rounded-md text-[11px] font-mono bg-amber-500/20 text-amber-300 border border-amber-500/30">
+              Practical Focus
+            </span>
+          </div>
+          <div class="mt-4">
+            <h3 class="text-lg font-bold text-white">Project Prototyping</h3>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+              Rapid conversion of abstract ideas into functional prototypes, architectural flow mapping, and analytical problem breakdown.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-slate-400">
+            <span>Methodology</span>
+            <span class="text-amber-400 font-semibold">Rapid Iteration</span>
+          </div>
+        </div>
+
+        <!-- Skill Card 6: Strengths & Soft Skills -->
+        <div class="skill-card-item glass-card-interactive rounded-2xl p-6" data-category="soft">
+          <div class="flex items-start justify-between">
+            <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path>
+              </svg>
+            </div>
+            <span class="px-2.5 py-1 rounded-md text-[11px] font-mono bg-pink-500/20 text-pink-300 border border-pink-500/30">
+              Core Strengths
+            </span>
+          </div>
+          <div class="mt-4">
+            <h3 class="text-lg font-bold text-white">Leadership & Adaptability</h3>
+            <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+              Leadership of small teams, technical curiosity, creativity & initiative, teamwork, and quick adaptation to novel engineering tools.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px] font-mono text-slate-400">
+            <span>Languages</span>
+            <span class="text-pink-400 font-semibold">Tamil (Native) · English (Good)</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section id="projects" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="space-y-4 text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full text-xs font-mono uppercase tracking-wider text-cyan-400 bg-cyan-500/10 border border-cyan-500/20">
+          <span>Featured Projects</span>
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
+          Engineered Hardware & <span class="gradient-text-cyan-blue">Platform Concepts</span>
+        </h2>
+        <p class="text-slate-400 text-base sm:text-lg">
+          Hands-on embedded engineering and national hackathon exposure directly from my resume.
+        </p>
+      </div>
+
+      <div class="space-y-12">
+        
+        <!-- PROJECT 1: Anti-Sleep Alarm System (FEATURED HERO CARD) -->
+        <article class="glass-panel rounded-3xl p-6 sm:p-10 border border-cyan-500/30 shadow-2xl relative overflow-hidden">
+          
+          <!-- Top Accent Light -->
+          <div class="absolute top-0 right-0 w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- Left Info Side -->
+            <div class="lg:col-span-7 space-y-6">
+              
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-3 py-1 rounded-md text-xs font-mono font-semibold bg-cyan-500/20 text-cyan-300 border border-cyan-500/40">
+                  College Project • Arduino Embedded System
+                </span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-slate-400 border border-white/10">
+                  Hardware Prototype
+                </span>
+              </div>
+
+              <div>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+                  Anti-Sleep Alarm System for Drivers
+                </h3>
+                <p class="text-sm font-mono text-cyan-400 mt-1">
+                  Active Real-Time Drowsiness Detection via Eye-Blink Sensor Interfacing
+                </p>
+              </div>
+
+              <!-- Problem & Solution Box -->
+              <div class="space-y-3 bg-white/5 rounded-2xl p-5 border border-white/10">
+                <div>
+                  <h4 class="text-xs font-mono uppercase tracking-wider text-rose-400 font-bold flex items-center space-x-1.5">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                    </svg>
+                    <span>The Problem</span>
+                  </h4>
+                  <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+                    Driver drowsiness, exhaustion, and sudden micro-sleep episodes during long night commutes cause catastrophic road accidents. Most commercial vehicles lack automated fatigue prevention.
+                  </p>
+                </div>
+
+                <div class="pt-3 border-t border-white/5">
+                  <h4 class="text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold flex items-center space-x-1.5">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span>Engineered Solution</span>
+                  </h4>
+                  <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+                    Engineered an embedded prototype that detects driver drowsiness by monitoring continuous eye-blinking via an optical eye-blink sensor. Programmed Arduino microcontroller logic to trigger a high-frequency buzzer alarm when prolonged eye closure is detected, warning the driver without seizing vehicle control.
+                  </p>
+                </div>
+              </div>
+
+              <!-- My Contribution & Key Features -->
+              <div class="space-y-2">
+                <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400">My Hands-on Contributions & Features:</h4>
+                <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
+                  <li><strong class="text-white">Circuit Assembly:</strong> Wired Arduino board, optical eye-blink sensor, piezo buzzer, 9V battery, and breadboard.</li>
+                  <li><strong class="text-white">Embedded Algorithm:</strong> Programmed logic to differentiate between rapid natural blinks and continuous fatigue closure.</li>
+                  <li><strong class="text-white">Safety-Critical Design:</strong> System warns the driver instantly with audible alerts and purposefully leaves vehicular control in the driver's hands.</li>
+                  <li><strong class="text-white">Practical Exposure:</strong> Gained hands-on knowledge in microcontroller logic, sensor interfacing, and automated alert systems.</li>
+                </ul>
+              </div>
+
+              <!-- Tech Badges -->
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">Arduino UNO</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">Eye-Blink Sensor</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">Piezo Buzzer</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">Embedded C</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-cyan-500/10 text-cyan-300 border border-cyan-500/20">Microcontroller Logic</span>
+              </div>
+            </div>
+
+            <!-- Right Interactive Simulation Playground -->
+            <div class="lg:col-span-5 bg-slate-950/80 rounded-2xl p-6 border border-cyan-500/30 flex flex-col justify-between space-y-6">
+              
+              <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                <div class="flex items-center space-x-2">
+                  <span class="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse"></span>
+                  <span class="text-xs font-mono font-bold text-white uppercase tracking-wider">Live Circuit Simulator</span>
+                </div>
+                <button id="sim-sound-toggle" class="text-[11px] font-mono px-2.5 py-1 rounded-md bg-white/5 border border-white/10 text-slate-300 hover:text-white transition-all cursor-pointer">
+                  🔇 Sound: OFF
+                </button>
+              </div>
+
+              <!-- Eye Graphic Visualizer -->
+              <div class="flex flex-col items-center justify-center py-4 bg-slate-900/60 rounded-xl border border-white/5 relative overflow-hidden">
+                
+                <div class="relative w-40 h-24 rounded-full border-2 border-cyan-500/50 flex items-center justify-center bg-slate-950 overflow-hidden shadow-inner" id="sim-eye-visual">
+                  <!-- Eye Iris -->
+                  <div class="w-16 h-16 rounded-full bg-gradient-to-tr from-cyan-600 to-blue-400 flex items-center justify-center shadow-lg">
+                    <div class="w-7 h-7 rounded-full bg-slate-950 flex items-center justify-center">
+                      <div class="w-2 h-2 rounded-full bg-white opacity-80"></div>
+                    </div>
+                  </div>
+                  <!-- Animated Eyelid -->
+                  <div id="sim-eye-lid" class="eye-lid absolute inset-x-0 top-0 h-0 bg-slate-800 border-b-2 border-cyan-400 shadow-md"></div>
+                </div>
+
+                <!-- Simulation Status Display -->
+                <div class="mt-4 text-center space-y-1">
+                  <div id="sim-status" class="px-3 py-1 text-xs font-semibold rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30">
+                    EYES OPEN · NORMAL DRIVING
+                  </div>
+                  <div class="text-[11px] font-mono text-slate-400">
+                    Closure Duration: <span id="sim-timer" class="text-white font-bold">0.0s</span> (Alarm triggers at ≥ 2.0s)
+                  </div>
+                </div>
+              </div>
+
+              <!-- Circuit Telemetry Details -->
+              <div class="grid grid-cols-2 gap-3 text-xs font-mono">
+                <div class="p-2.5 rounded-lg bg-white/5 border border-white/10 flex items-center justify-between">
+                  <span class="text-slate-400">Status LED:</span>
+                  <div id="sim-led" class="w-3 h-3 rounded-full bg-emerald-500"></div>
+                </div>
+                <div class="p-2.5 rounded-lg bg-white/5 border border-white/10 flex items-center justify-between">
+                  <span class="text-slate-400">Buzzer:</span>
+                  <span id="sim-buzzer" class="text-xs font-mono px-2 py-0.5 rounded bg-slate-800 text-slate-400 border border-slate-700">OFF</span>
+                </div>
+              </div>
+
+              <!-- Interactive Toggle Control -->
+              <div class="space-y-2 text-center">
+                <button id="sim-toggle-btn" class="w-full inline-flex items-center justify-center px-4 py-2.5 rounded-lg text-sm font-medium bg-amber-500/20 text-amber-300 hover:bg-amber-500/30 border border-amber-500/40 transition-colors shadow-sm cursor-pointer">
+                  <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.88 9.88l-3.29-3.29m7.532 7.532l3.29 3.29M3 3l18 18"></path>
+                  </svg>
+                  Simulate Eye Closure (Drowsy)
+                </button>
+                <p class="text-[11px] text-slate-400">
+                  Click to test the simulated microcontroller logic and alarm threshold.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+        </article>
+
+        <!-- PROJECT 2: FarmConnect (Smart India Hackathon Idea) -->
+        <article class="glass-panel rounded-3xl p-6 sm:p-10 border border-white/10 relative overflow-hidden">
+          
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- Left Info Side -->
+            <div class="lg:col-span-7 space-y-6">
+              
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-3 py-1 rounded-md text-xs font-mono font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/40">
+                  Smart India Hackathon (SIH) Idea • AgTech
+                </span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-white/5 text-slate-400 border border-white/10">
+                  Platform Architecture Concept
+                </span>
+              </div>
+
+              <div>
+                <h3 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+                  FarmConnect — Farmer-to-Consumer Platform
+                </h3>
+                <p class="text-sm font-mono text-emerald-400 mt-1">
+                  Decentralized Hub Distribution & Fair-Trade Direct Agricultural Marketplace
+                </p>
+              </div>
+
+              <!-- Problem & Solution Box -->
+              <div class="space-y-3 bg-white/5 rounded-2xl p-5 border border-white/10">
+                <div>
+                  <h4 class="text-xs font-mono uppercase tracking-wider text-rose-400 font-bold flex items-center space-x-1.5">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                    </svg>
+                    <span>The Problem</span>
+                  </h4>
+                  <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+                    Agricultural supply chains are congested with layered middlemen and commission brokers who consume upwards of 40-60% of produce value, while consumers receive delayed, stale produce at elevated retail prices.
+                  </p>
+                </div>
+
+                <div class="pt-3 border-t border-white/5">
+                  <h4 class="text-xs font-mono uppercase tracking-wider text-emerald-400 font-bold flex items-center space-x-1.5">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <span>Proposed Platform Architecture</span>
+                  </h4>
+                  <p class="text-xs text-slate-300 mt-1 leading-relaxed">
+                    Proposed a direct platform concept connecting consumers directly with farmers, removing extra layers between producer and buyer. Designed a localized hub distribution model to streamline aggregation, quality inspection, and prompt last-mile dispatch.
+                  </p>
+                </div>
+              </div>
+
+              <!-- My Contribution & Key Features -->
+              <div class="space-y-2">
+                <h4 class="text-xs font-mono uppercase tracking-wider text-slate-400">Key Contributions & Architecture:</h4>
+                <ul class="text-xs text-slate-300 space-y-1.5 list-disc list-inside">
+                  <li><strong class="text-white">SIH Problem Identification:</strong> Formulated economic analysis around farmer earnings, freshness loss, and logistics barriers.</li>
+                  <li><strong class="text-white">Produce Catalog Planning:</strong> Structured a diverse multi-category catalogue for vegetables, fresh milk, curd, eggs, rice, pulses, and organic crops.</li>
+                  <li><strong class="text-white">Hub-and-Spoke Logistics:</strong> Designed village-level collection points delivering to local urban hubs, drastically shrinking turnaround time.</li>
+                </ul>
+              </div>
+
+              <!-- Tech Badges -->
+              <div class="flex flex-wrap gap-2 pt-2">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">SIH Exposure</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">AgTech Platform</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">Supply Chain Design</span>
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">Hub Distribution Model</span>
+              </div>
+            </div>
+
+            <!-- Right Supply Chain Visualizer Mockup -->
+            <div class="lg:col-span-5 bg-slate-950/80 rounded-2xl p-6 border border-emerald-500/30 flex flex-col justify-between space-y-6">
+              
+              <div class="flex items-center justify-between border-b border-white/10 pb-3">
+                <span class="text-xs font-mono font-bold text-white uppercase tracking-wider">Architecture Flow Comparison</span>
+                <div class="flex rounded-lg bg-white/5 p-1 border border-white/10">
+                  <button class="fc-model-toggle px-2.5 py-1 rounded text-[11px] font-mono font-medium transition-all bg-cyan-500 text-slate-950 shadow-md cursor-pointer" data-mode="farmconnect">
+                    FarmConnect
+                  </button>
+                  <button class="fc-model-toggle px-2.5 py-1 rounded text-[11px] font-mono text-slate-400 hover:text-white transition-all cursor-pointer" data-mode="traditional">
+                    Traditional
+                  </button>
+                </div>
+              </div>
+
+              <!-- FarmConnect Direct Flow View -->
+              <div id="fc-view-farmconnect" class="space-y-4">
+                <div class="p-3.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30">
+                  <div class="flex items-center justify-between text-xs font-mono text-emerald-400 font-bold mb-1">
+                    <span>Direct Hub Model (3 Steps)</span>
+                    <span>Transit: ~8 Hours</span>
+                  </div>
+                  <p class="text-[11px] text-slate-300 leading-normal">
+                    Farmers dispatch harvested goods directly to local micro-collection points, which bundle and deliver straight to consumers.
+                  </p>
+                </div>
+
+                <div class="flex items-center justify-between space-x-2 text-center text-xs">
+                  <div class="p-2.5 rounded-xl bg-white/5 border border-white/10 flex-1">
+                    <span class="text-xl">🧑‍🌾</span>
+                    <div class="font-bold text-white mt-1 text-[11px]">Farmer</div>
+                    <div class="text-[10px] text-emerald-400 font-mono">+35% Profit</div>
+                  </div>
+                  <span class="text-emerald-400 font-bold">➔</span>
+                  <div class="p-2.5 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex-1">
+                    <span class="text-xl">🏬</span>
+                    <div class="font-bold text-white mt-1 text-[11px]">Local Hub</div>
+                    <div class="text-[10px] text-cyan-400 font-mono">Aggregation</div>
+                  </div>
+                  <span class="text-emerald-400 font-bold">➔</span>
+                  <div class="p-2.5 rounded-xl bg-white/5 border border-white/10 flex-1">
+                    <span class="text-xl">🏡</span>
+                    <div class="font-bold text-white mt-1 text-[11px]">Consumer</div>
+                    <div class="text-[10px] text-emerald-400 font-mono">100% Fresh</div>
+                  </div>
+                </div>
+
+                <!-- Product Catalog Planned -->
+                <div class="pt-3 border-t border-white/10">
+                  <span class="text-[11px] font-mono text-slate-400 uppercase tracking-wider block mb-2">Planned Produce Scope:</span>
+                  <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-slate-300">
+                    <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10">🥦 Fresh Vegetables</span>
+                    <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10">🥛 Milk & Curd</span>
+                    <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10">🥚 Eggs</span>
+                    <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10">🌾 Rice & Pulses</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Traditional Middleman Flow View -->
+              <div id="fc-view-traditional" class="space-y-4 hidden">
+                <div class="p-3.5 rounded-xl bg-rose-500/10 border border-rose-500/30">
+                  <div class="flex items-center justify-between text-xs font-mono text-rose-400 font-bold mb-1">
+                    <span>Traditional Multi-Layered Chain</span>
+                    <span>Transit: ~48-72 Hours</span>
+                  </div>
+                  <p class="text-[11px] text-slate-300 leading-normal">
+                    Produce travels through agents, regional mandis, wholesalers, and retail distributors—losing fresh quality and stripping farmer margins.
+                  </p>
+                </div>
+
+                <div class="grid grid-cols-5 gap-1 text-center text-[10px]">
+                  <div class="p-1.5 rounded bg-white/5">🧑‍🌾 Farmer</div>
+                  <div class="p-1.5 rounded bg-white/5">➔ Broker</div>
+                  <div class="p-1.5 rounded bg-white/5">➔ Mandi</div>
+                  <div class="p-1.5 rounded bg-white/5">➔ Retailer</div>
+                  <div class="p-1.5 rounded bg-white/5">🏡 Buyer</div>
+                </div>
+                <div class="p-2.5 rounded-lg bg-rose-500/10 text-rose-300 text-xs font-mono text-center">
+                  ⚠️ 4 Intermediate Cutoffs · High Produce Wastage
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION & TIMELINE SECTION ==================== -->
+    <section id="education" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="space-y-4 text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full text-xs font-mono uppercase tracking-wider text-cyan-400 bg-cyan-500/10 border border-cyan-500/20">
+          <span>Academic Milestones</span>
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
+          Education & <span class="gradient-text-cyan-blue">Credentials</span>
+        </h2>
+        <p class="text-slate-400 text-base sm:text-lg">
+          Consistent academic distinction and verified professional certifications.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+        
+        <!-- Left: Education Vertical Timeline -->
+        <div class="lg:col-span-7 space-y-8 relative before:absolute before:inset-0 before:left-5 before:w-0.5 before:bg-white/10">
+          
+          <!-- Timeline Item 1: B.E. CSE -->
+          <div class="relative pl-12 group">
+            <div class="absolute left-3.5 top-1.5 w-3.5 h-3.5 rounded-full bg-cyan-400 ring-4 ring-cyan-500/20 group-hover:scale-125 transition-transform"></div>
+            
+            <div class="glass-card-interactive rounded-2xl p-6">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-semibold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">
+                  2026 – 2030 • First Year (Current)
+                </span>
+                <span class="text-xs font-mono text-slate-400">Coimbatore, Tamil Nadu</span>
+              </div>
+
+              <h3 class="text-xl font-bold text-white mt-3">
+                B.E. Computer Science and Engineering
+              </h3>
+              <p class="text-sm text-cyan-400 font-medium">
+                KPR Institute of Engineering and Technology (KPRIET)
+              </p>
+
+              <p class="text-xs text-slate-300 mt-3 leading-relaxed">
+                Pursuing Bachelor of Engineering with focused coursework in foundational computer science, algorithmic logic, and programming paradigms. Active in university innovation hubs and technical clubs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2: Class XII -->
+          <div class="relative pl-12 group">
+            <div class="absolute left-3.5 top-1.5 w-3.5 h-3.5 rounded-full bg-blue-400 ring-4 ring-blue-500/20 group-hover:scale-125 transition-transform"></div>
+            
+            <div class="glass-card-interactive rounded-2xl p-6">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-semibold bg-blue-500/20 text-blue-300 border border-blue-500/30">
+                  Completed 2026 • Higher Secondary
+                </span>
+                <span class="text-xs font-mono text-emerald-400 font-bold bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">
+                  553 / 600 — 92.17%
+                </span>
+              </div>
+
+              <h3 class="text-xl font-bold text-white mt-3">
+                Class XII — Tamil Nadu State Board
+              </h3>
+              <p class="text-sm text-blue-400 font-medium">
+                Sree Saravana Nikethan Higher Secondary School, Nerinjipettai
+              </p>
+
+              <p class="text-xs text-slate-300 mt-3 leading-relaxed">
+                Graduated with Distinction (92.17%). Completed rigorous science and mathematics curriculum alongside active participation in school sports and co-curricular programs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3: Class X -->
+          <div class="relative pl-12 group">
+            <div class="absolute left-3.5 top-1.5 w-3.5 h-3.5 rounded-full bg-indigo-400 ring-4 ring-indigo-500/20 group-hover:scale-125 transition-transform"></div>
+            
+            <div class="glass-card-interactive rounded-2xl p-6">
+              <div class="flex flex-wrap items-center justify-between gap-2">
+                <span class="px-2.5 py-1 rounded-md text-xs font-mono font-semibold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+                  Completed 2024 • Matriculation
+                </span>
+                <span class="text-xs font-mono text-emerald-400 font-bold bg-emerald-500/10 px-2 py-0.5 rounded border border-emerald-500/20">
+                  483 / 500 — 96.6%
+                </span>
+              </div>
+
+              <h3 class="text-xl font-bold text-white mt-3">
+                Class X — Matriculation Board
+              </h3>
+              <p class="text-sm text-indigo-400 font-medium">
+                Sri Nachiyar Matriculation School
+              </p>
+
+              <p class="text-xs text-slate-300 mt-3 leading-relaxed">
+                Ranked among top achievers with 96.6% aggregate. Active participant in school extracurriculars, team athletic activities, and academic challenges.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Verified Certification Card & Credentials -->
+        <div class="lg:col-span-5 space-y-6">
+          
+          <div class="glass-panel rounded-3xl p-6 sm:p-8 border border-cyan-500/30 shadow-xl relative overflow-hidden">
+            <div class="flex items-center justify-between mb-4">
+              <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-md text-xs font-mono font-semibold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                </svg>
+                <span>Verified Certification</span>
+              </div>
+              <span class="text-xs font-mono text-slate-400">Jan 2026</span>
+            </div>
+
+            <h3 class="text-2xl font-bold text-white">Python Programming — 40 Hours</h3>
+            <p class="text-sm font-semibold text-cyan-400 mt-1">CUBE Technologies</p>
+
+            <p class="text-xs text-slate-300 mt-3 leading-relaxed">
+              Certificate of completion awarded for intensive 40-hour hands-on software training conducted at Sree Saravana Nikethan Matric. Hr. Sec. School, Nerinjipettai.
+            </p>
+
+            <!-- Covered Skills Tags -->
+            <div class="mt-4 pt-4 border-t border-white/10 space-y-2">
+              <span class="text-xs font-mono uppercase tracking-wider text-slate-400 block">Competencies Verified:</span>
+              <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-slate-300">
+                <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10">Python Syntax & Core</span>
+                <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10">Data Structures</span>
+                <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10">Functions & Modular Code</span>
+                <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10">Algorithmic Logic</span>
+                <span class="px-2 py-0.5 rounded bg-white/5 border border-white/10">Hands-on Exercises</span>
+              </div>
+            </div>
+
+            <!-- Action Button -->
+            <div class="mt-6 pt-4 border-t border-white/10">
+              <button id="open-cert-modal" class="w-full inline-flex items-center justify-center space-x-2 px-4 py-2.5 rounded-xl text-xs font-semibold bg-cyan-500/10 text-cyan-300 border border-cyan-500/30 hover:bg-cyan-500/20 hover:border-cyan-400 transition-all cursor-pointer">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+                </svg>
+                <span>View Full Certificate Information</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Academic Excellence Spotlight -->
+          <div class="glass-panel rounded-2xl p-6 border border-white/10 flex items-start space-x-4">
+            <div class="w-10 h-10 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 shrink-0">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+              </svg>
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-white">Consistent Academic Excellence</h4>
+              <p class="text-xs text-slate-400 mt-1 leading-normal">
+                Backed by 96.6% in Class X and 92.17% in Class XII, demonstrating discipline, perseverance, and strong analytical reasoning.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== ACHIEVEMENTS & ACTIVITIES SECTION ==================== -->
+    <section id="activities" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="space-y-4 text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full text-xs font-mono uppercase tracking-wider text-cyan-400 bg-cyan-500/10 border border-cyan-500/20">
+          <span>Leadership & Beyond</span>
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
+          Clubs, Sports & <span class="gradient-text-cyan-blue">Extracurriculars</span>
+        </h2>
+        <p class="text-slate-400 text-base sm:text-lg">
+          Active participation in collegiate technical clubs, sports teams, and innovation initiatives.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Activity Card 1: Ignitron Club -->
+        <div class="glass-card-interactive rounded-2xl p-6">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400 mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <span class="px-2.5 py-0.5 rounded text-[11px] font-mono bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">
+            College Technical Club
+          </span>
+          <h3 class="text-lg font-bold text-white mt-3">Member — Ignitron Club</h3>
+          <p class="text-xs font-semibold text-cyan-400">KPRIET, Coimbatore</p>
+          <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+            Active member of Ignitron Club, engaging in campus technical events, peer engineering workshops, and technology collaboration.
+          </p>
+        </div>
+
+        <!-- Activity Card 2: College Technical Activities -->
+        <div class="glass-card-interactive rounded-2xl p-6">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400 mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+            </svg>
+          </div>
+          <span class="px-2.5 py-0.5 rounded text-[11px] font-mono bg-blue-500/20 text-blue-300 border border-blue-500/30">
+            Innovation & Competitions
+          </span>
+          <h3 class="text-lg font-bold text-white mt-3">Technical & Innovation Activities</h3>
+          <p class="text-xs font-semibold text-blue-400">College Engineering Showcases</p>
+          <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+            Participating in project ideations, technical challenges, and prototyping demonstrations across departments at KPRIET.
+          </p>
+        </div>
+
+        <!-- Activity Card 3: Kho Kho Sports Team -->
+        <div class="glass-card-interactive rounded-2xl p-6">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400 mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <span class="px-2.5 py-0.5 rounded text-[11px] font-mono bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+            Athletics & Team Sports
+          </span>
+          <h3 class="text-lg font-bold text-white mt-3">Kho Kho — Sports Team Member</h3>
+          <p class="text-xs font-semibold text-emerald-400">School Athletic Representative</p>
+          <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+            Represented the school team in competitive Kho Kho matches. Developed sharp agility, fast decision-making, physical grit, and team communication.
+          </p>
+        </div>
+
+        <!-- Activity Card 4: School Extracurriculars -->
+        <div class="glass-card-interactive rounded-2xl p-6">
+          <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/30 flex items-center justify-center text-purple-400 mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"></path>
+            </svg>
+          </div>
+          <span class="px-2.5 py-0.5 rounded text-[11px] font-mono bg-purple-500/20 text-purple-300 border border-purple-500/30">
+            Foundational Growth
+          </span>
+          <h3 class="text-lg font-bold text-white mt-3">School Extracurriculars</h3>
+          <p class="text-xs font-semibold text-purple-400">Participation up to Class X</p>
+          <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+            Active participant across co-curricular school events, quizzes, cultural programs, and sports throughout academic schooling.
+          </p>
+        </div>
+
+        <!-- Activity Card 5: Teamwork & Communication -->
+        <div class="glass-card-interactive rounded-2xl p-6">
+          <div class="w-12 h-12 rounded-xl bg-pink-500/10 border border-pink-500/30 flex items-center justify-center text-pink-400 mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <span class="px-2.5 py-0.5 rounded text-[11px] font-mono bg-pink-500/20 text-pink-300 border border-pink-500/30">
+            Soft Skills
+          </span>
+          <h3 class="text-lg font-bold text-white mt-3">Team Leadership & Initiative</h3>
+          <p class="text-xs font-semibold text-pink-400">Peer Collaboration</p>
+          <p class="text-xs text-slate-300 mt-2 leading-relaxed">
+            Comfortable guiding small teams, delegating tasks, listening empathetically, and maintaining high morale during tight project deadlines.
+          </p>
+        </div>
+
+        <!-- Activity Card 6: Languages -->
+        <div class="glass-card-interactive rounded-2xl p-6">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/30 flex items-center justify-center text-amber-400 mb-4">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
+            </svg>
+          </div>
+          <span class="px-2.5 py-0.5 rounded text-[11px] font-mono bg-amber-500/20 text-amber-300 border border-amber-500/30">
+            Communication
+          </span>
+          <h3 class="text-lg font-bold text-white mt-3">Language Proficiencies</h3>
+          <p class="text-xs font-semibold text-amber-400">Multilingual Expression</p>
+          <div class="mt-3 space-y-1.5 text-xs text-slate-300 font-mono">
+            <div class="flex items-center justify-between">
+              <span>Tamil:</span>
+              <span class="text-emerald-400 font-bold">Native Speaker</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span>English:</span>
+              <span class="text-cyan-400 font-bold">Good Working Fluency</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+      <div class="space-y-4 text-center max-w-3xl mx-auto mb-16">
+        <div class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full text-xs font-mono uppercase tracking-wider text-cyan-400 bg-cyan-500/10 border border-cyan-500/20">
+          <span>Let's Connect</span>
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white">
+          Get in Touch & <span class="gradient-text-cyan-blue">Collaborate</span>
+        </h2>
+        <p class="text-slate-400 text-base sm:text-lg">
+          Whether you have an internship opportunity, a project collaboration idea, or want to discuss technology—I'd love to hear from you.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
+        
+        <!-- Left Contact Cards -->
+        <div class="lg:col-span-5 space-y-4 flex flex-col justify-between">
+          
+          <!-- Email Card -->
+          <div class="glass-panel rounded-2xl p-6 border border-white/10 group hover:border-cyan-500/40 transition-all">
+            <div class="flex items-start justify-between">
+              <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/30 flex items-center justify-center text-cyan-400">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                </svg>
+              </div>
+              <button id="copy-email-btn" class="px-2.5 py-1 rounded-md text-[11px] font-mono bg-white/5 hover:bg-cyan-500/20 text-slate-300 hover:text-cyan-300 border border-white/10 transition-all cursor-pointer" title="Copy to clipboard">
+                Copy Email
+              </button>
+            </div>
+            <div class="mt-4">
+              <span class="text-xs font-mono text-slate-400">Direct Email:</span>
+              <a href="mailto:harishwa.tech2008@gmail.com" class="block text-base font-bold text-white hover:text-cyan-400 transition-colors mt-0.5">
+                harishwa.tech2008@gmail.com
+              </a>
+            </div>
+          </div>
+
+          <!-- Phone Card -->
+          <div class="glass-panel rounded-2xl p-6 border border-white/10 group hover:border-blue-500/40 transition-all">
+            <div class="flex items-start justify-between">
+              <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/30 flex items-center justify-center text-blue-400">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+              </div>
+              <span class="text-[11px] font-mono text-slate-400 bg-white/5 px-2.5 py-1 rounded-md border border-white/10">Mobile</span>
+            </div>
+            <div class="mt-4">
+              <span class="text-xs font-mono text-slate-400">Phone Number:</span>
+              <a href="tel:+919384392613" class="block text-base font-bold text-white hover:text-blue-400 transition-colors mt-0.5">
+                +91 93843 92613
+              </a>
+            </div>
+          </div>
+
+          <!-- LinkedIn Card -->
+          <div class="glass-panel rounded-2xl p-6 border border-white/10 group hover:border-indigo-500/40 transition-all">
+            <div class="flex items-start justify-between">
+              <div class="w-12 h-12 rounded-xl bg-indigo-500/10 border border-indigo-500/30 flex items-center justify-center text-indigo-400">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </div>
+              <a href="https://linkedin.com/in/harishwa-s-048762432" target="_blank" rel="noopener noreferrer" class="px-2.5 py-1 rounded-md text-[11px] font-mono bg-indigo-500/20 text-indigo-300 border border-indigo-500/30 hover:bg-indigo-500/30 transition-all flex items-center space-x-1">
+                <span>View Profile</span>
+                <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="mt-4">
+              <span class="text-xs font-mono text-slate-400">Professional Network:</span>
+              <span class="block text-sm font-semibold text-white mt-0.5 font-mono">
+                linkedin.com/in/harishwa-s-048762432
+              </span>
+            </div>
+          </div>
+
+          <!-- Location Card -->
+          <div class="glass-panel rounded-2xl p-6 border border-white/10">
+            <div class="flex items-center space-x-3">
+              <div class="w-10 h-10 rounded-xl bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center text-emerald-400">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+              </div>
+              <div>
+                <span class="text-xs font-mono text-slate-400">Location:</span>
+                <p class="text-sm font-bold text-white">Salem, Tamil Nadu, India</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right Interactive Form -->
+        <div class="lg:col-span-7 glass-panel rounded-3xl p-8 sm:p-10 border border-cyan-500/30 shadow-2xl flex flex-col justify-between">
+          <div>
+            <h3 class="text-2xl font-bold text-white mb-2">Send a Direct Message</h3>
+            <p class="text-xs sm:text-sm text-slate-400 mb-6">
+              Fill out this form to prepare a message directly addressed to my inbox (<span class="text-cyan-400 font-mono">harishwa.tech2008@gmail.com</span>).
+            </p>
+
+            <form id="contact-form" class="space-y-4">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="sender-name" class="block text-xs font-mono text-slate-300 mb-1.5">Your Full Name *</label>
+                  <input type="text" id="sender-name" required placeholder="John Doe" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all">
+                </div>
+                <div>
+                  <label for="sender-email" class="block text-xs font-mono text-slate-300 mb-1.5">Your Email Address *</label>
+                  <input type="email" id="sender-email" required placeholder="john@example.com" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all">
+                </div>
+              </div>
+
+              <div>
+                <label for="sender-subject" class="block text-xs font-mono text-slate-300 mb-1.5">Subject</label>
+                <input type="text" id="sender-subject" placeholder="Internship Opportunity / Project Collaboration" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all">
+              </div>
+
+              <div>
+                <label for="sender-message" class="block text-xs font-mono text-slate-300 mb-1.5">Your Message *</label>
+                <textarea id="sender-message" rows="4" required placeholder="Hi Harishwa, I would like to discuss..." class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-white/10 text-white placeholder-slate-500 text-sm focus:outline-none focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 transition-all"></textarea>
+              </div>
+
+              <button type="submit" class="w-full inline-flex items-center justify-center space-x-2 px-6 py-3.5 rounded-xl text-sm font-semibold bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 text-white shadow-xl shadow-cyan-500/25 hover:shadow-cyan-500/40 hover:scale-[1.01] active:scale-[0.99] transition-all cursor-pointer">
+                <span>Send Message</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </button>
+
+              <div id="form-feedback" class="hidden"></div>
+            </form>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-white/10 text-center">
+            <span class="text-xs text-slate-400">
+              Prefer WhatsApp or direct call? Dial <a href="tel:+919384392613" class="text-cyan-400 font-mono font-semibold hover:underline">+91 93843 92613</a>
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="relative z-10 border-t border-white/10 bg-slate-950/80 py-12 px-4 sm:px-6 lg:px-8 mt-20">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      
+      <div class="flex items-center space-x-3 text-center md:text-left">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-sm shadow-md">
+          H
+        </div>
+        <div>
+          <span class="text-base font-bold text-white">Harishwa S</span>
+          <p class="text-xs text-slate-400">Computer Science & Engineering • KPRIET Coimbatore</p>
+        </div>
+      </div>
+
+      <!-- Quick Nav Links in Footer -->
+      <div class="flex flex-wrap justify-center gap-6 text-xs text-slate-400 font-mono">
+        <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+        <a href="#skills" class="hover:text-cyan-400 transition-colors">Skills</a>
+        <a href="#projects" class="hover:text-cyan-400 transition-colors">Projects</a>
+        <a href="#education" class="hover:text-cyan-400 transition-colors">Education</a>
+        <a href="#contact" class="hover:text-cyan-400 transition-colors">Contact</a>
+        <a href="assets/docs/Harishwa_S_Resume.pdf" download="Harishwa_S_Resume.pdf" class="text-cyan-400 hover:underline">Download Resume</a>
+      </div>
+
+      <div class="text-center md:text-right text-xs text-slate-500 font-mono">
+        <p>© 2026 Harishwa S. All verified details from resume.</p>
+        <p class="text-[11px] text-slate-600 mt-1">Built with semantic HTML5, Tailwind CSS & clean JavaScript</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== BACK TO TOP CONTROL ==================== -->
+  <button id="back-to-top" aria-label="Scroll back to top" class="fixed bottom-6 right-6 z-50 p-3 rounded-full glass-panel border border-cyan-500/30 text-cyan-400 hover:text-white hover:bg-cyan-500/20 shadow-xl opacity-0 pointer-events-none translate-y-4 transition-all duration-300 cursor-pointer">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+    </svg>
+    <svg class="absolute inset-0 w-full h-full -rotate-90 pointer-events-none" viewBox="0 0 40 40">
+      <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2" class="text-white/10" />
+      <circle id="scroll-progress-circle" cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2.5" class="text-cyan-400 transition-all duration-100" />
+    </svg>
+  </button>
+
+  <!-- ==================== TOAST NOTIFICATION ==================== -->
+  <div id="copy-toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 px-4 py-2.5 rounded-xl bg-slate-900 border border-cyan-500 text-white text-xs font-mono shadow-2xl opacity-0 pointer-events-none translate-y-2 transition-all duration-300">
+    Email copied to clipboard!
+  </div>
+
+  <!-- ==================== CERTIFICATE MODAL ==================== -->
+  <div id="cert-modal" class="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4 hidden">
+    <div class="relative glass-panel rounded-3xl p-6 sm:p-8 border border-cyan-500/40 shadow-2xl max-w-lg w-full space-y-5">
+      <div class="flex items-center justify-between border-b border-white/10 pb-4">
+        <div class="flex items-center space-x-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-cyan-400"></span>
+          <h3 class="text-base font-bold text-white">Certificate Details</h3>
+        </div>
+        <button class="close-cert-modal text-slate-400 hover:text-white p-1 rounded-lg hover:bg-white/10 transition-colors cursor-pointer">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <div class="space-y-4">
+        <div>
+          <span class="text-xs font-mono text-cyan-400 uppercase tracking-wider">Course Name</span>
+          <h4 class="text-xl font-extrabold text-white">Python Programming — 40 Hours</h4>
+        </div>
+
+        <div class="grid grid-cols-2 gap-3 text-xs font-mono bg-white/5 p-3.5 rounded-xl border border-white/10">
+          <div>
+            <span class="text-slate-400 block">Training Provider:</span>
+            <span class="text-white font-bold">CUBE Technologies</span>
+          </div>
+          <div>
+            <span class="text-slate-400 block">Completion Date:</span>
+            <span class="text-cyan-300 font-bold">January 2026</span>
+          </div>
+          <div class="col-span-2 pt-2 border-t border-white/5">
+            <span class="text-slate-400 block">Conducted At:</span>
+            <span class="text-slate-200">Sree Saravana Nikethan Matric. Hr. Sec. School, Nerinjipettai</span>
+          </div>
+        </div>
+
+        <div>
+          <span class="text-xs font-mono text-slate-400 block mb-2">Curriculum Highlights:</span>
+          <ul class="text-xs text-slate-300 space-y-1 list-disc list-inside">
+            <li>Fundamental Python architecture and syntax semantics</li>
+            <li>Conditionals, iterations, and control flow</li>
+            <li>Functions, parameters, and modular program design</li>
+            <li>Data structures: Lists, Tuples, Dictionaries, Sets</li>
+            <li>Practical problem solving and algorithmic exercises</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-4 border-t border-white/10 flex justify-end">
+        <button class="close-cert-modal px-5 py-2.5 rounded-xl text-xs font-semibold bg-white/10 text-white hover:bg-white/20 transition-all cursor-pointer">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== RESUME VIEWER MODAL ==================== -->
+  <div id="resume-modal" class="fixed inset-0 z-50 bg-slate-950/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-6 hidden">
+    <div class="relative glass-panel rounded-3xl border border-cyan-500/40 shadow-2xl max-w-4xl w-full h-[88vh] flex flex-col overflow-hidden">
+      
+      <!-- Modal Header -->
+      <div class="p-4 sm:p-5 border-b border-white/10 flex items-center justify-between bg-slate-900/60">
+        <div class="flex items-center space-x-3">
+          <div class="w-8 h-8 rounded-lg bg-cyan-500/20 text-cyan-300 flex items-center justify-center">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-sm sm:text-base font-bold text-white">Harishwa S — Official Resume</h3>
+            <p class="text-[11px] font-mono text-cyan-400">PDF Document Preview</p>
+          </div>
+        </div>
+
+        <div class="flex items-center space-x-2">
+          <a href="assets/docs/Harishwa_S_Resume.pdf" download="Harishwa_S_Resume.pdf" class="inline-flex items-center space-x-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-cyan-500 text-slate-950 hover:bg-cyan-400 transition-colors">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+            </svg>
+            <span>Download</span>
+          </a>
+          <button class="close-resume-modal text-slate-400 hover:text-white p-1.5 rounded-lg hover:bg-white/10 transition-colors cursor-pointer">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- PDF Embed Body -->
+      <div class="flex-1 bg-slate-950 p-2 overflow-hidden">
+        <iframe src="assets/docs/Harishwa_S_Resume.pdf" class="w-full h-full rounded-xl border border-white/5" title="Harishwa S Resume Preview"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript App Controller -->
+  <script src="js/app.js"></script>
+</body>
+</html>
